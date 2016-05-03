@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://static.ull.es/v3/docs/examples/simple/ -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Universidad de La Laguna">
+        <meta name="keywords" content="Universidad de La Laguna">
+        <meta name="author" content="Universidad de La Laguna">
+
+        <title>Universidad de La Laguna - Análisis del empleo de los titulados universitarios.</title>
+
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://static.ull.es/v3/dist/img/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://static.ull.es/v3/dist/img/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://static.ull.es/v3/dist/img/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="http://static.ull.es/v3/dist/img/apple-touch-icon-57-precomposed.png">
+        <link rel="shortcut icon" href="http://static.ull.es/v3/dist/img/favicon.ico">
+
+        <!-- <link href="http://static.ull.es/v3/dist/css/ull.min.css" rel="stylesheet">-->
+        <link href="css/ull.min.css" rel="stylesheet">        
+        <link href="css/bootsnipp.css" rel="stylesheet">
+        <!-- <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+
+        <link href="css/cssBootstrap.css" rel="stylesheet">
+        <link href="css/cssCustomDesign.css" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="navbar navbar-default navbar-ull" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-app-collapse">
+                        <span class="sr-only">Desplegar menú de aplicación</span>
+                        <span class="fa fa-bars fa-stack"></span>
+                    </button>
+                    <a class="navbar-brand umi" >Unidad mixta de investigación</a>
+                     <a class="navbar-brand fg" href="http://www.fg.ull.es/">Fundación General de la Universidad de La Laguna</a>   
+
+                    <a class="navbar-brand ull" href="http://www.ull.es/">Universidad de La Laguna</a>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-main-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Servicios telemáticos <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" title="Gestión de perfil de usuario" href="http://usuarios.ull.es/"><i class="fa fa-user"></i> Gestión de perfil de usuario</a></li>
+                                <li><a target="_blank" title="Portal ULL" href="http://portal.ull.es/"><i class="fa fa-folder-open"></i> Portal</a></li>
+                                <li><a target="_blank" title="Sede electrónica" href="http://sede.ull.es/"><i class="fa fa-briefcase"></i> Sede electrónica</a></li>
+                                <li><a target="_blank" title="Campus Virtual" href="http://www.campusvirtual.ull.es/"><i class="fa fa-pencil"></i> Campus virtual</a></li>
+                                <li><a target="_blank" title="Correo electrónico" href="http://ull.edu.es/"><i class="fa fa-envelope"></i> Correo electrónico</a></li>
+                                <li><a target="_blank" title="Disco duro virtual" href="http://ddv.ull.es/"><i class="fa fa-hdd-o"></i> Disco duro virtual</a></li>
+                                <li><a target="_blank" title="Biblioteca digital" href="http://www.bbtk.ull.es/view/institucional/bbtk/Biblioteca_Digital/es"><i class="fa fa-book"></i> Biblioteca digital</a></li>
+                                <li><a target="_blank" title="Eventos" href="http://eventos.ull.es/"><i class="fa fa-calendar"></i> Eventos</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Contacto <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a target="_blank" href="http://www.ull.es/"><i class="fa fa-globe"></i> Página Web ULL</a></li>
+                                <li><a target="_blank" title="Formulario de contacto" href="http://www.ull.es/view/institucional/ull/Contacto_3/es"><i class="fa fa-list-alt"></i> Formulario de contacto</a></li>
+                                <li><a target="_blank" title="Teléfonos" href="http://www.ull.es/view/institucional/ull/Telefonos/es"><i class="fa fa-phone"></i> Directorio telefónico</a></li>
+                                <li class="divider"></li>
+                                <li>
+                                    <ul class="rrss text-muted list-inline">
+                                        <li><a target="_blank" href="http://www.facebook.com/universidaddelalaguna"><i class="fa fa-facebook-square"></i></a></li>
+                                        <li><a target="_blank" href="http://www.tuenti.com/#m=Page&func=index&page_key=1_160_68944913"><i class="fa fa-tumblr-square"></i></a></li>
+                                        <li><a target="_blank" href="http://twitter.com/CanalULL"><i class="fa fa-twitter-square"></i></a></li>
+                                        <li><a target="_blank" href="http://www.linkedin.com/groups/Universidad-Laguna-2656178"><i class="fa fa-linkedin-square"></i></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar navbar-default navbar-app" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <ol class="breadcrumb">
+                        <li class="active"><a href="http://static.ull.es/v3/docs/examples/simple/#">Análisis del empleo de los titulados universitarios.</a></li>
+                    </ol>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-app-collapse">
+                        <ul class="nav pull-right menu-appbar hidden-phone">
+                              <li class="dropdown">
+                                 <a href="http://static.ull.es/index_modelo_app.html#" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-question-sign"></i> Ayuda y soporte <b class="caret"></b></a>
+                                 <ul class="dropdown-menu">                                    
+                                    <li><a target="_blank" title="Correo electrónico ganpla@ull.es" href="mailto:ganpla@ull.es"><i class="glyphicon glyphicon-envelope"></i> ganpla@ull.es</a></li>
+                                 </ul>
+                              </li>
+                              
+                            </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="container">
+
+      <div class="starter-template">
+        <h1>
+        <p class="lead">Informes de empleabilidad de los titulados por centros.</p></h1>
+        <p>Los informes marcados con (*) agrupan varios planes de estudio (e.g., véase Máster en Biomedicina).</p>
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <div class="container" style="margin-top:30px;">
+    <div class="row">
+        <div class="col-md-4">
+                <div class="well" ><strong>Facultad de Humanidades</strong>
+                    <br />
+                <ul id="tree1">
+                <li><a href="#">Sección de Bellas Artes</a>
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G005_Graduado en Bellas Artes.pdf">Graduado en Bellas Artes</a></li>
+                        <li><a href="pdf/InformeINSLAB_G047_Graduado en Diseño.pdf">Graduado en Diseño</a></li>
+                        <li><a href="pdf/InformeINSLAB_G048_Graduado en Conservación y Restauración de Bienes Culturales.pdf">Graduado en Conservación y Restauración de Bienes Culturales</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_M531_Máster en Arte, Territorio y Paisaje.pdf">Máster en Arte, Territorio y Paisaje</a></li>
+                        <li><a href="pdf/InformeINSLAB_M534_M564_Máster en Innovación en Diseño para el Sector Turístico.pdf">Máster en Innovación en Diseño para el sector turístico (*)</a></li>
+                        <li><a href="pdf/InformeINSLAB_M572_Máster en Uso y Gestión del Patrimonio Cultural.pdf">Máster en Uso y Gestión del Patrimonio Cultural</a></li>
+                    </ul>
+
+                  </li></ul>
+                </li>
+                <li>Sección de Filología
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G007_Graduado en Español. Lengua y Literatura.pdf">Graduado en Español: Lengua y Literatura</a></li>
+                        <li><a href="pdf/InformeINSLAB_G008_Graduado en Estudios Clásicos.pdf">Graduado en Estudios Clásicos</a></li>
+                        <li><a href="pdf/InformeINSLAB_G009_Graduado en Estudios Ingleses.pdf">Graduado en Estudios Ingleses</a></li>
+                        <li><a href="pdf/InformeINSLAB_G025_Graduado en Estudios Francófonos Aplicados.pdf">Graduado en Estudios Francófonos Aplicados</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M532_Máster en Estudios Norteamericanos.pdf">Máster en Estudios Norteamericanos</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M560_Máster en Lingüística Aplicada a las Tecnologías del Lenguaje y Gestión.pdf">Máster en Lingüística Aplicada a las Tecnologías del Lenguaje y Gestión</a></li>                     
+                    </ul>
+                  </li></ul>                   
+                </li>
+                <li>Sección de Filosofía
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G010_Graduado en Filosofía.pdf">Graduado en Filosofía</a></li>
+
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M504_Máster en Filosofía, Cultura y Sociedad.pdf">Máster en Filosofía, Cultura y Sociedad</a></li>
+                        <li><a href="pdf/InformeINSLAB_M517_Máster en Lógica y Filosofía de la Ciencia.pdf">Máster en Lógica y Filosofía de la Ciencia</a></li>
+			<li><a href="pdf/InformeINSLAB_M543_Máster en Estudios de Género y Políticas de Igualdad.pdf">Máster en Estudios de Género y Políticas de Igualdad</a></li>
+                    </ul>
+                  </li></ul>
+                </li>
+                <li>Sección de Geografía e Historia
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G011_Graduado en Geografía y Ordenación del Territorio.pdf">Graduado en Geografía y Ordenación del Territorio</a></li>
+                        <li><a href="pdf/InformeINSLAB_G012_Graduado en Historia.pdf">Graduado en Historia</a></li>
+                        <li><a href="pdf/InformeINSLAB_G013_Graduado en Historia del Arte.pdf">Graduado en Historia del Arte</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M540_Máster en Arqueología.pdf">Máster Interuniversitario en Arqueología</a></li>
+                        <li><a href="pdf/InformeINSLAB_M541_Máster en Teoría e Historia del Arte y Gestión Cultural.pdf">Máster en Teoría e Historia del Arte y Gestión Cultural</a></li>
+                        <li><a href="pdf/InformeINSLAB_M544_Máster en Estudios Africanos.pdf">Máster en Estudios Africanos</a></li>
+                    </ul>
+                  </li></ul>
+                </li> 
+                </ul>
+                </div>
+        </div>
+
+
+        <div class="col-md-4">
+            <div class="well"><strong>Facultad de Ciencias Políticas, Sociales y de la Comunicación</strong>
+                <br /> 
+                <ul id="tree10">
+                <li><a href="#">Sección de Ciencias de la Información</a>
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G001_Graduado en Periodismo.pdf">Graduado en Periodismo</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M539_Máster en Ciencias de la Comunicación.pdf">Máster en Ciencias de la Comunicación</a></li>
+                    </ul>
+                  </li></ul>
+                </li>
+                <li>Sección de Ciencias Políticas y Sociales
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G018_Graduado en Trabajo Social.pdf">Graduado en Trabajo Social</a></li>
+                        <li><a href="pdf/InformeINSLAB_G035_Graduado en Sociología.pdf">Graduado en Sociología</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M523_M551_Máster en Intervención Social y Comunitaria.pdf">Máster en Intervención Social y Comunitaria (*)</a></li>
+                    </ul>
+                  </li></ul>
+                </li>                
+                </ul>   
+            </div>            
+        </div>
+
+        <div class="col-md-4">
+            <div class="well"><strong>Facultad de Derecho </strong>
+                <br /> 
+                <ul id="tree11">
+                <li><a href="#">Facultad de Derecho</a>
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G024_Graduado en Relaciones Laborales.pdf">Graduado en Relaciones Laborales</a></li>
+                        <li><a href="pdf/InformeINSLAB_G036_Graduado en Derecho.pdf">Graduado en Derecho</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M530_Máster en Prevención de Riesgos Laborales.pdf">Máster en Prevención de Riesgos Laborales</a></li>
+                        <li><a href="pdf/InformeINSLAB_M574_Máster en Dirección de Recursos Humanos.pdf">Máster en Dirección de Recursos Humanos</a></li>  
+                    </ul>
+                  </li></ul>
+                </li>                     
+                </ul>   
+
+            </div>            
+        </div>
+    </div>
+
+
+    <div class="row">
+
+        <div class="col-md-4">
+                <div class="well" ><strong>Facultad de Economía, Empresa y Turismo</strong>
+                    <br />
+                <ul id="tree4">
+                <li><a href="#">Sección de Ciencias Económicas y Empresariales</a>
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G003_Graduado en Administración y Dirección de Empresas.pdf">Graduado en Administración y Dirección de Empresas</a></li>
+                        <li><a href="pdf/InformeINSLAB_G004_Graduado en Economía.pdf">Graduado en Economía</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M520_Máster en Desarrollo Regional, Formación y Empleo.pdf">Máster en Desarrollo Regional, Formación y Empleo</a></li>
+                    </ul>
+                  </li></ul>
+                </li>
+                <li>Sección de Empresa-Turismo
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G002_Graduado en Turismo.pdf">Graduado en Turismo</a></li>
+                        <li><a href="pdf/InformeINSLAB_G021_Graduado en Contabilidad y Finanzas.pdf">Graduado en Contabilidad y Finanzas</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M503_M559_Máster en Dirección y Planificación del Turismo.pdf">Máster en Dirección y Planificación del Turismo (*)</a></li>
+                        <li><a href="pdf/InformeINSLAB_M502_Máster en Dirección de Comercio Exterior.pdf">Máster en Dirección de Comercio Exterior</a></li>
+                        <li><a href="pdf/InformeINSLAB_M565_Máster en Economía y Políticas Públicas.pdf">Máster en Economía y Políticas Públicas</a></li>
+                    </ul>
+                  </li></ul>
+                </li>                
+                </ul> 
+                </div>
+        </div>
+
+        <div class="col-md-4">
+                <div class="well" ><strong>Facultad de Ciencias</strong>
+                    <br />
+                <ul id="tree5">
+                <li><a href="#">Sección de Biología</a>
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G023_Graduado en Biología.pdf">Graduado en Biología</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M533_Máster en Biodiversidad Terrestre y Conservación en Islas.pdf">Máster en Biodiversidad Terrestre y Conservación en Islas</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M562_Máster en Biología Marina_Biodiversidad y Conservación.pdf">Máster en Biología Marina, Biodiversidad y Conservación</a></li>          
+                    </ul>
+                  </li></ul>
+                </li>
+                <li>Sección de Física
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G019_Graduado en Física.pdf">Graduado en Física</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>                        
+                        <li><a href="pdf/InformeINSLAB_M501_M546_Máster en Astrofísica.pdf">Máster en Astrofísica (*)</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M535_M545_Máster en Energías Renovables.pdf">Máster en Energías Renovables (*)</a></li> 
+                        <li><a href="pdf/InformeINSLAB_M511_Máster en Física_ Estructura de la Materia.pdf">Máster en Física: Estructura de la Materia</a></li> 
+                        <li><a href="pdf/InformeINSLAB_M519_Máster en Ingeniería Electrónica.pdf">Máster en Ingeniería Electrónica</a></li>
+                    </ul>
+                  </li></ul>  
+                </li>   
+                <li>Sección de Matemáticas
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G034_Graduado en Matemáticas.pdf">Graduado en Matemáticas</a></li>
+                    </ul> 
+                  </li></ul> 
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M518_Máster en Matemática Avanzada_ Aplicaciones y Educación.pdf">Máster en Matemática Avanzada: Aplicaciones y Educación</a></li>                        
+                    </ul>
+                  </li></ul>                                                   
+                </li>
+                <li>Sección de Química
+                  <ul>
+                  <li>Grados
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G017_Graduado en Química.pdf">Graduado en Química</a></li>
+                        <li><a href="#">Graduado en Ciencias Ambientales</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M556_Máster en Química.pdf">Máster en Química</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M514_Máster en Química Aplicada.pdf">Máster en Química Aplicada</a></li> 
+                        <li><a href="pdf/InformeINSLAB_M515_Máster en Ingeniería Química.pdf">Máster en Química</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M556_Máster en Ingeniería Química.pdf">Máster en Química</a></li>                     
+                    </ul>
+                  </li></ul>                    
+                </li>
+                </ul> 
+                </div>
+        </div>
+
+        <div class="col-md-4">
+                <div class="well" ><strong>Facultad de Ciencias de la Salud</strong>
+                    <br />
+                <ul id="tree6">
+                <li><a href="#">Sección de Enfermería y Fisioterapia</a>
+                  <ul>
+                  <li>Grados                    
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G006_Graduado en Enfermería.pdf">Graduado en Enfermería</a></li>                        
+                        <li><a href="pdf/InformeINSLAB_G044_Graduado en Enfermería (Hosp. La Palma).pdf">Graduado en Enfermería (unidad docente La Palma)</a></li>
+                        <li><a href="pdf/InformeINSLAB_G020_Graduado en Fisioterapia.pdf">Graduado en Fisioterapia</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>                        
+                        <li><a href="pdf/InformeINSLAB_M542_Máster en Investigación, Gestión y Calidad en Cuidados para la Salud.pdf">Máster en Investigación, Gestión y Calidad en Cuidados para la Salud</a></li>
+                    </ul>
+                  </li></ul>                      
+                </li>
+                <li>Sección de Farmacia
+                  <ul>
+                  <li>Grados                    
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G029_Graduado en Farmacia.pdf">Graduado en Farmacia</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M510_M525_M558_Máster en Seguridad y Calidad de los Alimentos.pdf">Máster en Seguridad y Calidad de los Alimentos (*)</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M553_Máster en Investigación y Diagnóstico de Enfermedad Tropicales.pdf">Máster en Investigación y Diagnóstico de Enfermedad Tropicales</a></li>                        
+                    </ul>
+                  </li></ul>  
+                </li>   
+                <li>Sección de Medicina
+                  <ul>
+                  <li>Grados                    
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G037_Graduado en Medicina.pdf">Graduado en Medicina</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M507_M527_M537_Máster en Biomedicina.pdf">Máster en Biomedicina (*)</a></li>
+                        <li><a href="pdf/InformeINSLAB_M512_M526_M538_Máster en Biotecnología.pdf">Máster en Biotecnología (*)</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M563_Máster en Bioética y Bioderecho.pdf">Máster en Bioética y Bioderecho</a></li>               
+                    </ul>
+                  </li></ul>  
+                </li>
+                <li>Sección de Psicología
+                  <ul>
+                  <li>Grados                    
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G015_Graduado en Logopedia.pdf">Grado de Logopedia</a></li>
+                        <li><a href="pdf/InformeINSLAB_G016_Graduado en Psicología.pdf">Graduado en Psicología</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>                        
+                        <li><a href="pdf/InformeINSLAB_M505_M554_Máster en Neurociencia Cognitiva y Necesidades Educativas Específicas.pdf">Máster en Neurociencia Cognitiva y Necesidades Educativas Específicas</a></li>
+                        <li><a href="pdf/InformeINSLAB_M509_Máster en Intervención y Mediación Familiar.pdf">Máster en Intervención y Mediación Familiar</a></li>
+                        <li><a href="pdf/InformeINSLAB_M547_Máster en Mediación Familiar y Sociocomunitaria.pdf">Máster en Mediación Familiar y Sociocomunitaria</a></li>
+                        <li><a href="pdf/InformeINSLAB_M508_Máster en Psicología Clínica y de la Salud.pdf">Máster en Psicología Clínica y de la Salud</a></li>
+                        <li><a href="pdf/InformeINSLAB_M524_M555_Máster en Psicología de la Educación.pdf">Máster en Psicología de la Educación (*)</a></li>  
+                        <li><a href="pdf/InformeINSLAB_M550_Máster en Intervención Familiar.pdf">Máster en Intervención Familiar</a></li> 
+                        <li><a href="pdf/InformeINSLAB_M557_Máster en Intervención Psicopedagógica en Contextos de Educación Formal y no Formal.pdf">Máster en Intervención Psicopedagógica en Contextos de Educación Formal y no Formal</a></li>    
+                        <li><a href="pdf/InformeINSLAB_M573_Máster en Desarrollo y Gestión de Recursos Humanos.pdf">Máster en Desarrollo y Gestión de Recursos Humanos</a></li>       
+                    </ul>
+                  </li></ul>                      
+                </li>
+                </ul> 
+                </div>
+        </div>
+     </div>
+
+
+    <div class="row">
+        
+        <div class="col-md-4">
+                <div class="well" ><strong>Escuela Politécnica Superior de Ingeniería</strong>
+                    <br />
+                <ul id="tree7">
+                <li><a href="#">Sección de Arquitectura Técnica</a>
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G014_Graduado en Ingeniería de Edificación.pdf">Graduado en Ingeniería de Edificación</a></li>
+                    </ul>
+                  </li></ul>                  
+                </li>
+                <li>Sección de Ingeniería Agraria
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G030_Graduado en Ingeniería Agrícola y del Medio Rural.pdf">Graduado en Ingeniero Agrícola y del Medio Rural</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>                  
+                </li>   
+                <li>Sección de Ingeniería Civil
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G038_Graduado en Ingeniería Civil.pdf">Graduado en Ingeniería Civil</a></li>
+                    </ul>
+                  </li></ul>                  
+                </li>
+                <li>Sección de Náutica, Máquinas y Radioelectrónica Naval
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G027_Graduado en Ingeniería Náutica y Transporte Marítimo.pdf">Graduado en Náutica y Transporte Marítimo</a></li>
+                        <li><a href="pdf/InformeINSLAB_G028_Graduado en Ingeniería Marina.pdf">Graduado en Ingeniería Marina</a></li>
+                        <!--<li><a href="#">Graduado en Tecnologías Marinas</a></li>
+                        <li><a href="pdf/InformeINSLAB_G042_Graduado en Ingeniería Radioelectrónica.pdf">Graduado en Ingeniería Radioelectrónica Naval</a></li>-->
+                    </ul>
+                  </li></ul>                                  
+                </li>
+                </ul> 
+                </div>
+        </div>
+
+       <div class="col-md-4">
+                <div class="well" ><strong>Escuela Superior de Ingeniería y Tecnología</strong>
+                    <br />
+                <ul id="tree8">
+                <li><a href="#">Sección de Ingeniería Industrial</a>
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G039_Graduado en Ingeniería Electrónica Industrial y Automática.pdf">Graduado en Ingeniería Electrónica Industrial y Automática</a></li>
+                        <li><a href="pdf/InformeINSLAB_G040_Graduado en Ingeniería Mecánica.pdf">Graduado en Ingeniería Mecánica</a></li>
+                        <li><a href="pdf/InformeINSLAB_G041_Graduado en Ingeniería Química Industrial.pdf">Graduado en Ingeniería Química Industrial</a></li>
+                    </ul>  
+                   </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M536_Máster en Técnicas para la Investigación, Desarrollo e Innovación en Ciencias e Ingeniería.pdf">Máster en Técnicas para la Investigación, Desarrollo e Innovación en Ciencias e Ingeniería</a></li>                        
+                    </ul>
+                  </li></ul>                                      
+                </li>
+                <li>Sección de Ingeniería Informática
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G026_Graduado en Ingeniería Informática.pdf">Graduado en Ingeniería Informática</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>
+                        <li><a href="pdf/InformeINSLAB_M521_Máster en Informática.pdf">Máster en Ingeniería Informática Aplicada a la Industria, a la Ingeniería del Software y a los Sistemas y Tecnologías de la Información</a></li>                        
+                    </ul>
+                  </li></ul> 
+                </li>
+                </ul> 
+                </div>
+        </div>
+
+               <div class="col-md-4">
+                <div class="well" ><strong>Facultad de Educación</strong>
+                    <br />
+                <ul id="tree9">
+                <li><a href="#">Facultad de Educación</a>
+                  <ul>
+                  <li>Grados                      
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G031_Graduado en Maestro en Educación Infantil.pdf">Grado de Maestro de Educación Infantil</a></li>
+                        <li><a href="pdf/InformeINSLAB_G032_Graduado en Maestro en Educación Primaria.pdf">Grado de Maestro de Educación Primaria</a></li>
+                        <li><a href="pdf/InformeINSLAB_G033_Graduado en Pedagogía.pdf">Grado de Pedagogía</a></li>
+                    </ul>
+                  </li></ul>
+                  <ul>
+                  <li>Máster
+                     <ul>                        
+                        <li><a href="pdf/InformeINSLAB_M516_Máster en Intervención Psicopedagógica en Contextos de Educación Formal y No Formal.pdf">Máster en Intervención Psicopedagógica en Contextos de Educación Formal y No Formal</a></li>   
+                        <li><a href="pdf/InformeINSLAB_M529_Máster en Formación del Profesorado de Educación Secundaria Obligatoria, Bachillerato, Formación Profesional.pdf">Máster en Formación del Profesorado de Educación Secundaria Obligatoria y Bachillerato, Formación Profesional y Enseñanza de Idiomas</a></li>  
+                        <li><a href="pdf/InformeINSLAB_M549_Máster en Educación y Tecnologías de la Información y la Comunicación.pdf">Máster en Educación y Tecnologías de la Información y la Comunicación</a></li>                        
+                    </ul>
+                  </li></ul>                     
+                </li>                
+                </ul> 
+                </div>
+        </div>
+    </div>  
+
+    <div class="row">
+        
+        <div class="col-md-4">
+                <div class="well" ><strong>Escuela Universitaria de Enfermería Ntra. Sra. La Candelaria</strong>
+                    <br />
+                <ul id="tree12">
+                <li><a href="#">Escuela Universitaria de Enfermería Ntra. Sra. La Candelaria</a>
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G022_Graduado en Enfermería (Hosp. La Candelaria).pdf">Graduado en Enfermería (centro adscrito Esc. univ. Ntra. Sra. de La Candelaria)</a></li>
+                    </ul>
+                </li>                
+                </ul> 
+                </div>
+        </div>
+         <div class="col-md-4">
+                <div class="well" ><strong>Escuela Universitaria de Turismo de Tenerife</strong>
+                    <br />
+                <ul id="tree13">
+                <li><a href="#">Escuela Universitaria de Turismo de Tenerife</a>
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G045_Graduado en Turismo (Esc. Tenerife).pdf">Graduado en Turismo (centro adscrito Escuela de Turismo Tenerife)</a></li>
+                    </ul>
+                </li>                
+                </ul> 
+                </div>
+        </div>
+        <div class="col-md-4">
+                <div class="well" ><strong>Escuela Universitaria de Turismo Iriarte</strong>
+                    <br />
+                <ul id="tree14">
+                <li><a href="#">Escuela Universitaria de Turismo Iriarte</a>
+                    <ul>
+                        <li><a href="pdf/InformeINSLAB_G043_Graduado en Turismo (Esc. Tomás Iriarte).pdf">Graduado en Turismo (centro adscrito Escuela de Turismo Iriarte)</a></li>
+                    </ul>
+                </li>                
+                </ul> 
+                </div>
+        </div>
+       
+    </div>    
+
+    </div>
+
+
+
+        <div id="footer" style="position:relative;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="address pull-left">
+                            <li><strong>Universidad de La Laguna</strong><br> Pabellón de Gobierno, C/ Molinos de Agua s/n. | San Cristóbal de La Laguna, Santa Cruz de Tenerife - España (38200) | Teléfono: (+34) 922 31 90 00/01</li>
+                        </ul>
+                        <ul class="list-inline text-muted pull-right">
+                            <li><a title="Facebook" target="_blank" href="http://www.facebook.com/universidaddelalaguna"><span class="fa fa-facebook-square"></span></a></li>
+                            <li><a title="Tuenti" target="_blank" href="http://www.tuenti.com/#m=Page&func=index&page_key=1_160_68944913"><i class="fa fa-tumblr-square"></i></a></li>
+                            <li><a title="Twitter" target="_blank" href="http://twitter.com/CanalULL"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a title="LinkedIn" target="_blank" href="http://www.linkedin.com/groups/Universidad-Laguna-2656178"><i class="fa fa-linkedin-square"></i></a></li>
+                            <li><a title="Página web ULL" target="_blank" href="http://www.ull.es/"><i class="fa fa-globe"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /.container -->
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!--[if lt IE 9]><script src="//static.ull.es/v3/dist/js/ullie.min.js"></script><![endif]-->
+    <script src="js/ull.min.js"></script>    
+    <script src="js/jquery.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="js/bootsnipp.js"></script>
+
+
+
+</body></html>
